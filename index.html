@@ -1,0 +1,205 @@
+<html>
+<head>
+	<title>Bootstrap4のテスト</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script type="javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<p>
+		<h1>タイトル１</h1>
+		<h2>見出し２</h2>
+		<p class="lead">
+			リードテキストエリア。記事の初めに書くと目立つ。
+		</p>
+		<p>
+			本文エリア。ずらずらと書いていく。
+		</p>
+		<p class="text-right">
+			右揃え
+		</p>
+		<h3>見出し３</h3>
+		<h4>見出し４</h4>
+		<h5>見出し５</h5>
+		<h6>見出し６</h6>
+	</p>
+
+	<p>
+		<!-- 普通のリスト -->
+		<ul>
+			<li>リスト１</li>
+			<li>リスト２</li>
+			<li>リスト３</li>
+		</ul>
+	</p>
+
+	<p>
+		<!-- インラインリスト -->
+		<ul class="list-inline">
+			<li class="list-inline-item">インラインリスト１</li>
+			<li class="list-inline-item">インラインリスト２</li>
+			<li class="list-inline-item">インラインリスト３</li>
+		</ul>
+	</p>
+
+	<p>
+		<!-- タイトルと本文の関係から成る箇条書き -->
+		<dl>
+			<dt>
+				項目タイトル１
+			</dt>
+			<dd>
+				項目本文１
+			</dd>
+			<dt>
+				項目タイトル２
+			</dt>
+			<dd>
+				項目本文２
+			</dd>
+		</dl>
+	</p>
+
+	<p>
+		<!-- タイトルと本文の関係から成る箇条書きの横バージョン -->
+		<dl class="row">
+			<dt class="col-sm-2">
+				項目タイトル１
+			</dt>
+			<dd class="col-sm-10">
+				項目本文１
+			</dd>
+			<dt class="col-sm-2">
+				項目タイトル２
+			</dt>
+			<dd class="col-sm-10">
+				項目本文２
+			</dd>
+		</dl>
+	</p>
+
+	<p>
+		<!-- Slackでいう `コード` みたいなやつ -->
+		<code>
+			printf("TEST %f", 3.14);
+		</code>
+	</p>
+
+	<p>
+		<!-- キーボード表示 -->
+		<kbd>
+			Ctrl + Shift + F12
+		</kbd>
+	</p>
+
+	<p>
+		<!-- フォーマット済みテキスト（そのまま表示される） -->
+		<pre>
+	int main() {
+		printf("TEST %f", 3.14f);
+		return 0;
+	}
+		</pre>
+	</p>
+
+	<p><hr></p>
+
+	<!-- ベーシックなテーブル -->
+	<table class="table col-sm-6">
+		<!-- ヘッダーの色 -->
+		<thead class="thead-light">
+			<tr>
+				<th>ヘッダー１</th>
+				<th>ヘッダー２</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					セル１
+				</td>
+				<td>
+					セル２
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>フッター１</th>
+				<th>フッター２</th>
+			</tr>
+		</tfoot>
+	</table>
+
+	<!-- 交互に背景が異なるテーブル -->
+	<table class="table table-striped col-sm-6">
+		<thead>
+			<tr>
+				<th>ヘッダー１</th>
+				<th>ヘッダー２</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					セル１
+				</td>
+				<td>
+					セル２
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- 全部罫線付きのテーブル -->
+	<table class="table table-bordered col-sm-6">
+		<thead>
+			<tr>
+				<th>ヘッダー１</th>
+				<th>ヘッダー２</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					セル１
+				</td>
+				<td>
+					セル２
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- 上下余白をケチったテーブル -->
+	<table class="table table-sm col-sm-6">
+		<thead>
+			<tr>
+				<th>ヘッダー１</th>
+				<th>ヘッダー２</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					セル１
+				</td>
+				<td>
+					セル２
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p><hr></p>
+
+	<p>
+		<a href="form.html">フォームの練習</a>
+	</p>
+
+</div>
+
+</body>
+</html>
