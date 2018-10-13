@@ -2,11 +2,11 @@
 <head>
 	<title>Bootstrap4のテスト</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script type="javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-
 <div class="container">
 	<p>
 		<h1>タイトル１</h1>
@@ -192,6 +192,58 @@
 			</tr>
 		</tbody>
 	</table>
+
+	<p><hr></p>
+
+	<!-- 画像系 -->
+	<p>
+		<!-- 四隅が丸くなる -->
+		<img src="img/banner_buin.gif" class="rounded">
+
+		<!-- サムネイル調のグレーの枠が外側に付く -->
+		<img src="img/banner_leonardo.png" class="img-thumbnail">
+		<img src="img/leonardo.png" class="img-thumbnail">
+
+		<!-- 丸く切り取られる -->
+		<img src="img/leonardo_follow.png" class="rounded-circle">
+	</p>
+
+	<p><hr></p>
+
+	<!-- アコーディオン: jQuery が必要 -->
+	<p>
+		<div id="tabs" role="tablist" aria-multiselectable="true">
+			<div class="card">
+				<div class="card-header" role="tab" id="tab1header">
+					<h5 class="card-title">
+						<a data-toggle="collapse" data-parent="#tabs" href="#tab1content" aria-expanded="true" aria-controls="tab1content">
+							アコーディオンヘッダー
+						</a>
+					</h5>
+				</div>
+				<div class="collapse show" id="tab1content" role="tabcard" aria-labelledby="tab1header">
+					<div class="card-body">
+						本文はこちら。
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" role="tab" id="tab2header">
+					<h5 class="card-title">
+						<a data-toggle="collapse" data-parent="#tabs" href="#tab2content" aria-expanded="true" aria-controls="tab2content">
+							アコーディオンヘッダー
+						</a>
+					</h5>
+				</div>
+				<div class="collapse" id="tab2content" role="tabcard" aria-labelledby="tab2header">
+					<div class="card-body">
+						本文はこちら。
+					</div>
+				</div>
+			</div>
+		</div>
+	</p>
 
 	<p><hr></p>
 
