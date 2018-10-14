@@ -8,6 +8,25 @@
 
 <body>
 <div class="container">
+
+	<!-- パンくずリスト: liで括ってもいいし、ただのaタグだけでもいい -->
+	<p>
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/">Home</a></li>
+			<li class="breadcrumb-item"><a href="#">Works</a></li>
+			<li class="breadcrumb-item"><a href="#">祝福の花冠</a></li>
+		</ul>
+
+		<!-- 以下でも全く同じものが表示される -->
+		<ul class="breadcrumb">
+			<a class="breadcrumb-item" href="/">Home</a>
+			<a class="breadcrumb-item" href="#">Works</a>
+			<a class="breadcrumb-item" href="#">祝福の花冠</a>
+		</ul>
+	</p>
+
+	<p><hr></p>
+
 	<p>
 		<h1>タイトル１</h1>
 		<h2>見出し２</h2>
@@ -102,6 +121,211 @@
 		return 0;
 	}
 		</pre>
+	</p>
+
+	<p><hr></p>
+
+	<p>
+		<!-- 四角いバッジ -->
+		<span class="badge badge-primary">OK</span>
+		<span class="badge badge-success">成功</span>
+		<span class="badge badge-info">情報</span>
+		<span class="badge badge-warning">警告</span>
+		<span class="badge badge-danger">エラー</span>
+		<span class="badge badge-light">Light</span>
+		<span class="badge badge-dark">ダーク</span>
+	</p>
+
+	<p>
+		<!-- 丸いバッジ -->
+		<span class="badge badge-pill badge-primary">OK</span>
+		<span class="badge badge-pill badge-success">成功</span>
+		<span class="badge badge-pill badge-info">情報</span>
+		<span class="badge badge-pill badge-warning">警告</span>
+		<span class="badge badge-pill badge-danger">エラー</span>
+		<span class="badge badge-pill badge-light">Light</span>
+		<span class="badge badge-pill badge-dark">ダーク</span>
+	</p>
+
+	<p><hr></p>
+
+	<!-- 消去可能なアラートバー表示 -->
+	<p>
+		<div class="alert alert-dismissable fade show alert-success" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			操作に成功
+		</div>
+		<div class="alert alert-dismissable fade show alert-info" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			情報メッセージ
+		</div>
+		<div class="alert alert-dismissable fade show alert-warning" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			操作が完全に行われていません。
+		</div>
+		<div class="alert alert-dismissable fade show alert-danger" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			操作に失敗しました。
+		</div>
+		<div class="alert alert-dismissable fade show alert-light" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			ほにゃらら
+		</div>
+		<div class="alert alert-dismissable fade show alert-dark" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			ほにゃらら
+		</div>
+	</p>
+
+	<p><hr></p>
+
+	<!-- アラートモーダル表示 -->
+	<p>
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalcontent">ボタンを押してモーダルを表示</button>
+
+		<!-- アラートの中身 -->
+		<div class="modal fade" id="modalcontent" tabindex="-1" role="dialog" aria-labelledby="modalheader" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+
+			<!-- 大きいモーダルを出すにはこっち -->
+			<!-- <div class="modal-dialog modal-lg" role="document"> -->
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="modalheader">モーダルのタイトルです</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						モーダルのコンテンツです。
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-light" data-dismiss="modal">キャンセル</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">次へ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</p>
+
+	<p><hr></p>
+
+	<!-- プログレスバー -->
+	<p>
+		<div class="progress my-2">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width:50%"
+				aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress my-2">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width:50%"
+				aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress my-2">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width:50%"
+				aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress my-2">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:50%"
+				aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress my-2">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:50%"
+				aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress my-2">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-light" role="progressbar" style="width:50%"
+				aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="progress my-2">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width:50%"
+				aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</p>
+
+	<!-- 画像と文章のコンテンツ -->
+	<p>
+		<div class="media">
+			<img class="mr-3 img-responsive" src="img/leonardo_follow.png" style="width: 120px;">
+			<div class="media-body">
+				<h4>メディア タイトル</h4>
+				<p>
+					当サークルのマスコットキャラクターです。<br>
+					サークルの創設３年目のときに突如として現れたようですが、<br>
+					残念ながら部員たちにはあまり認知されていないようです。<br>
+					当サークルのマスコットキャラクターです。<br>
+					サークルの創設３年目のときに突如として現れたようですが、<br>
+					残念ながら部員たちにはあまり認知されていないようです。<br>
+				</p>
+
+				<!-- ネストすることもできる -->
+				<div class="media">
+					<img class="mr-3 img-responsive" src="img/leonardo.png" style="width: 120px;">
+					<div class="media-body">
+						<h4>メディア タイトル</h4>
+						<p>
+							当サークルのマスコットキャラクターです。<br>
+							サークルの創設３年目のときに突如として現れたようですが、<br>
+							残念ながら部員たちにはあまり認知されていないようです。<br>
+							当サークルのマスコットキャラクターです。<br>
+							サークルの創設３年目のときに突如として現れたようですが、<br>
+							残念ながら部員たちにはあまり認知されていないようです。<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</p>
+
+	<p><hr></p>
+
+	<!-- カード：小さなコンテンツのかたまり・ヘッダーとフッターを含められる -->
+	<p>
+		<div class="card-columns">
+
+			<div class="card">
+				<h3 class="card-header">Card. 1</h3>
+				<div class="card-body">
+					<p class="card-text">
+						カードのテキスト
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<!-- ヘッダーは見出しタグでなくても良い -->
+				<div class="card-header">Card. 2</div>
+				<div class="card-body">
+					<p class="card-text">
+						カードのテキスト
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<h3 class="card-header">Card. 3</h3>
+				<div class="card-body">
+					<p class="card-text">
+						<!-- カード内専用のリンククラスがある -->
+						カードの<a href="#" class="card-link">テキスト</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<p class="card-text">
+						<h3>Card. 4</h3>
+						カードのテキスト
+					</p>
+				</div>
+				<div class="card-footer">
+					カードのフッター
+				</div>
+			</div>
+
+
+		</div>
 	</p>
 
 	<p><hr></p>
@@ -212,16 +436,16 @@
 
 	<!-- アコーディオン: jQuery が必要 -->
 	<p>
-		<div id="tabs" role="tablist" aria-multiselectable="true">
+		<div id="accordions" role="tablist" aria-multiselectable="true">
 			<div class="card">
-				<div class="card-header" role="tab" id="tab1header">
+				<div class="card-header" role="tab" id="accordion1header">
 					<h5 class="card-title">
-						<a data-toggle="collapse" data-parent="#tabs" href="#tab1content" aria-expanded="true" aria-controls="tab1content">
+						<a data-toggle="collapse" data-parent="#accordions" href="#accordion1content" aria-expanded="true" aria-controls="accordion1content">
 							アコーディオンヘッダー
 						</a>
 					</h5>
 				</div>
-				<div class="collapse show" id="tab1content" role="tabcard" aria-labelledby="tab1header">
+				<div class="collapse show" id="accordion1content" role="tabcard" aria-labelledby="accordion1header">
 					<div class="card-body">
 						本文はこちら。
 					</div>
@@ -229,14 +453,14 @@
 			</div>
 
 			<div class="card">
-				<div class="card-header" role="tab" id="tab2header">
+				<div class="card-header" role="tab" id="accordion2header">
 					<h5 class="card-title">
-						<a data-toggle="collapse" data-parent="#tabs" href="#tab2content" aria-expanded="true" aria-controls="tab2content">
+						<a data-toggle="collapse" data-parent="#accordions" href="#accordion2content" aria-expanded="true" aria-controls="accordion2content">
 							アコーディオンヘッダー
 						</a>
 					</h5>
 				</div>
-				<div class="collapse" id="tab2content" role="tabcard" aria-labelledby="tab2header">
+				<div class="collapse" id="accordion2content" role="tabcard" aria-labelledby="accordion2header">
 					<div class="card-body">
 						本文はこちら。
 					</div>
@@ -247,8 +471,136 @@
 
 	<p><hr></p>
 
+	<!-- ナビゲーション: タブバー -->
 	<p>
-		<a href="form.html">フォームの練習</a>
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="tab1" href="#tab1content" role="tab" data-toggle="tab" aria-controls="tab1content" aria-expanded="true">Tab1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="tab2" href="#tab2content" role="tab" data-toggle="tab" aria-controls="tab2content" aria-expanded="true">Tab2</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div class="tab-pane fade show active" id="tab1content" role="tabpanel" aria-labelledby="tab1">
+				<p>
+					ここはタブ１のコンテンツです。
+				</p>
+			</div>
+			<div class="tab-pane fade" id="tab2content" role="tabpanel" aria-labelledby="tab2">
+				<p>
+					タブ２のコンテンツへようこそ。
+				</p>
+			</div>
+		</div>
+	</p>
+
+	<p><hr></p>
+
+	<!-- カルーセル/スライダー -->
+	<p>
+		<div id="slider-parent" class="carousel slide bg-dark w-50 ml-auto mr-auto" data-ride="carousel">
+			<!-- インジケーター -->
+			<ol class="carousel-indicators">
+				<li data-target="#slider-parent" data-slide-to="0" class="active"></li>
+				<li data-target="#slider-parent" data-slide-to="1"></li>
+				<li data-target="#slider-parent" data-slide-to="2"></li>
+			</ol>
+
+			<!-- 実際に表示する画像 -->
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="img/banner_buin.gif">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/banner_leonardo.png">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/leonardo_follow.png">
+				</div>
+			</div>
+
+			<!-- 前へ・次へボタン -->
+			<a class="carousel-control-prev" href="#slider-parent" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">前へ</span>
+			</a>
+			<a class="carousel-control-next" href="#slider-parent" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">次へ</span>
+			</a>
+		</div>
+	</p>
+
+	<p><hr></p>
+
+	<!-- 埋め込みコンテンツのレスポンシブ表示 -->
+	<p>
+		<!-- 16:9 の動画 -->
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/4LuvmbGfFSs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</p>
+	<p>
+		<!-- 4:3 の動画 -->
+		<div class="embed-responsive embed-responsive-4by3">
+			<iframe width="976" height="732" src="https://www.youtube.com/embed/ozz6Fwrw3qc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</p>
+
+	<p><hr></p>
+
+	<!-- ツールヒント -->
+	<script>
+// ツールヒント表示の初期化
+$(function() {
+	$('[data-toggle="tooltip"]').tooltip();
+});
+	</script>
+
+	<p>
+		ここに<a href="#" data-toggle="tooltip" data-placement="bottom" title="これがツールヒントです！">ツールヒント</a>が表示されます
+	</p>
+
+
+	<p><hr></p>
+
+	<!-- ページング表示 -->
+	<nav>
+		<ul class="pagination">
+			<!-- 最初に戻るボタン-->
+			<li class="page-item">
+				<a href="#" class="page-link" aria-label="First">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>
+
+			<li class="page-item"><a href="#" class="page-link">1</a></li>
+			<li class="page-item"><a href="#" class="page-link">2</a></li>
+
+			<!-- アクティブな表示 -->
+			<li class="page-item active"><a href="#" class="page-link">3</a></li>
+
+			<!-- 押せないページ -->
+			<li class="page-item disabled"><a href="#" class="page-link">4</a></li>
+			<li class="page-item"><a href="#" class="page-link">5</a></li>
+
+			<!-- 最後に進むボタン -->
+			<li class="page-item">
+				<a href="#" class="page-link" aria-label="Last">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<p><hr></p>
+
+	<p>
+		<ul class="list-unstyled">
+			<li><a href="form.html">フォームの練習へ</a></li>
+		</ul>
 	</p>
 
 </div>
