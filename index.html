@@ -9,6 +9,8 @@
 <body>
 <div class="container">
 
+	<h1 class="my-4">パンくずリスト</h1>
+
 	<!-- パンくずリスト: liで括ってもいいし、ただのaタグだけでもいい -->
 	<p>
 		<ul class="breadcrumb">
@@ -28,24 +30,68 @@
 	<p><hr></p>
 
 	<p>
-		<h1>タイトル１</h1>
+		<!-- 基本的な書式設定 -->
+		<h1>見出し１</h1>
 		<h2>見出し２</h2>
+		<h3>見出し３</h3>
+		<h4>見出し４</h4>
+		<h5>見出し５</h5>
+		<h6>見出し６</h6>
+
 		<p class="lead">
 			リードテキストエリア。記事の初めに書くと目立つ。
 		</p>
 		<p>
 			本文エリア。ずらずらと書いていく。
 		</p>
+
 		<p class="text-right">
 			右揃え
 		</p>
-		<h3>見出し３</h3>
-		<h4>見出し４</h4>
-		<h5>見出し５</h5>
-		<h6>見出し６</h6>
+		<p class="text-center">
+			中央揃え
+		</p>
+
+		<p class="text-danger">
+			文字の色変え
+		</p>
+		<p class="bg-danger">
+			背景の色変え
+		</p>
+
+		<p>
+			<!-- Slackでいう `コード` みたいなやつ -->
+			コード: &nbsp;
+			<code>
+				printf("TEST %f", 3.14);
+			</code>
+		</p>
+
+		<p>
+			<!-- キーボード表示 -->
+			<kbd>
+				Ctrl + Shift + F12
+			</kbd>
+		</p>
+
+		<p>
+			<!-- フォーマット済みテキスト（そのまま表示される） -->
+			<pre>
+// フォーマット済みテキスト
+int main() {
+	printf("TEST %f", 3.14f);
+	return 0;
+}
+			</pre>
+		</p>
+
 	</p>
 
+	<p><hr></p>
+
 	<p>
+		<h1 class="my-4">普通のリスト</h1>
+
 		<!-- 普通のリスト -->
 		<ul>
 			<li>リスト１</li>
@@ -54,7 +100,11 @@
 		</ul>
 	</p>
 
+	<p><hr></p>
+
 	<p>
+		<h1 class="my-4">インラインリスト</h1>
+
 		<!-- インラインリスト -->
 		<ul class="list-inline">
 			<li class="list-inline-item">インラインリスト１</li>
@@ -63,7 +113,11 @@
 		</ul>
 	</p>
 
+	<p><hr></p>
+
 	<p>
+		<h1 class="my-4">タイトルと本文（縦）</h1>
+
 		<!-- タイトルと本文の関係から成る箇条書き -->
 		<dl>
 			<dt>
@@ -81,7 +135,11 @@
 		</dl>
 	</p>
 
+	<p><hr></p>
+
 	<p>
+		<h1 class="my-4">タイトルと本文（横）</h1>
+
 		<!-- タイトルと本文の関係から成る箇条書きの横バージョン -->
 		<dl class="row">
 			<dt class="col-sm-2">
@@ -99,33 +157,11 @@
 		</dl>
 	</p>
 
-	<p>
-		<!-- Slackでいう `コード` みたいなやつ -->
-		<code>
-			printf("TEST %f", 3.14);
-		</code>
-	</p>
-
-	<p>
-		<!-- キーボード表示 -->
-		<kbd>
-			Ctrl + Shift + F12
-		</kbd>
-	</p>
-
-	<p>
-		<!-- フォーマット済みテキスト（そのまま表示される） -->
-		<pre>
-	int main() {
-		printf("TEST %f", 3.14f);
-		return 0;
-	}
-		</pre>
-	</p>
-
 	<p><hr></p>
 
 	<p>
+		<h1 class="my-4">四角いバッジ</h1>
+
 		<!-- 四角いバッジ -->
 		<span class="badge badge-primary">OK</span>
 		<span class="badge badge-success">成功</span>
@@ -137,6 +173,8 @@
 	</p>
 
 	<p>
+		<h1 class="my-4">丸いバッジ</h1>
+
 		<!-- 丸いバッジ -->
 		<span class="badge badge-pill badge-primary">OK</span>
 		<span class="badge badge-pill badge-success">成功</span>
@@ -151,6 +189,8 @@
 
 	<!-- 消去可能なアラートバー表示 -->
 	<p>
+		<h1 class="my-4">消去できるアラートバー</h1>
+
 		<div class="alert alert-dismissable fade show alert-success" role="alert">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			操作に成功
@@ -181,6 +221,8 @@
 
 	<!-- アラートモーダル表示 -->
 	<p>
+		<h1 class="my-4">アラートモーダル</h1>
+
 		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalcontent">ボタンを押してモーダルを表示</button>
 
 		<!-- アラートの中身 -->
@@ -213,6 +255,8 @@
 
 	<!-- プログレスバー -->
 	<p>
+		<h1 class="my-4">プログレスバー</h1>
+
 		<div class="progress my-2">
 			<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width:50%"
 				aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
@@ -243,8 +287,12 @@
 		</div>
 	</p>
 
+	<p><hr></p>
+
 	<!-- 画像と文章のコンテンツ -->
 	<p>
+		<h1 class="my-4">画像と文章のコンテンツ（メディア）</h1>
+
 		<div class="media">
 			<img class="mr-3 img-responsive" src="img/leonardo_follow.png" style="width: 120px;">
 			<div class="media-body">
@@ -281,6 +329,8 @@
 
 	<!-- カード：小さなコンテンツのかたまり・ヘッダーとフッターを含められる -->
 	<p>
+		<h1 class="my-4">カード</h1>
+
 		<div class="card-columns">
 
 			<div class="card">
@@ -331,6 +381,7 @@
 	<p><hr></p>
 
 	<!-- ベーシックなテーブル -->
+	<h1 class="my-4">ベーシックなテーブル</h1>
 	<table class="table col-sm-6">
 		<!-- ヘッダーの色 -->
 		<thead class="thead-light">
@@ -357,7 +408,10 @@
 		</tfoot>
 	</table>
 
+	<p><hr></p>
+
 	<!-- 交互に背景が異なるテーブル -->
+	<h1 class="my-4">交互に背景が異なるテーブル</h1>
 	<table class="table table-striped col-sm-6">
 		<thead>
 			<tr>
@@ -377,7 +431,10 @@
 		</tbody>
 	</table>
 
+	<p><hr></p>
+
 	<!-- 全部罫線付きのテーブル -->
+	<h1 class="my-4">全部罫線付きのテーブル</h1>
 	<table class="table table-bordered col-sm-6">
 		<thead>
 			<tr>
@@ -397,7 +454,10 @@
 		</tbody>
 	</table>
 
+	<p><hr></p>
+
 	<!-- 上下余白をケチったテーブル -->
+	<h1 class="my-4">上下余白をケチったテーブル</h1>
 	<table class="table table-sm col-sm-6">
 		<thead>
 			<tr>
@@ -421,6 +481,8 @@
 
 	<!-- 画像系 -->
 	<p>
+		<h1 class="my-4">画像の縁をアレンジ</h1>
+
 		<!-- 四隅が丸くなる -->
 		<img src="img/banner_buin.gif" class="rounded">
 
@@ -436,6 +498,8 @@
 
 	<!-- アコーディオン: jQuery が必要 -->
 	<p>
+		<h1 class="my-4">アコーディオン</h1>
+
 		<div id="accordions" role="tablist" aria-multiselectable="true">
 			<div class="card">
 				<div class="card-header" role="tab" id="accordion1header">
@@ -473,6 +537,8 @@
 
 	<!-- ナビゲーション: タブバー -->
 	<p>
+		<h1 class="my-4">タブバー</h1>
+
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="nav-item">
 				<a class="nav-link active" id="tab1" href="#tab1content" role="tab" data-toggle="tab" aria-controls="tab1content" aria-expanded="true">Tab1</a>
@@ -500,6 +566,8 @@
 
 	<!-- カルーセル/スライダー -->
 	<p>
+		<h1 class="my-4">スライダー・カルーセル</h1>
+
 		<div id="slider-parent" class="carousel slide bg-dark w-50 ml-auto mr-auto" data-ride="carousel">
 			<!-- インジケーター -->
 			<ol class="carousel-indicators">
@@ -537,14 +605,18 @@
 
 	<!-- 埋め込みコンテンツのレスポンシブ表示 -->
 	<p>
+		<h1 class="my-4">埋め込みコンテンツ（16:9）</h1>
+
 		<!-- 16:9 の動画 -->
-		<div class="embed-responsive embed-responsive-16by9">
+		<div class="embed-responsive embed-responsive-16by9 col-lg-6 mx-auto">
 			<iframe width="1280" height="720" src="https://www.youtube.com/embed/4LuvmbGfFSs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 	</p>
 	<p>
+		<h1 class="my-4">埋め込みコンテンツ（4:3）</h1>
+
 		<!-- 4:3 の動画 -->
-		<div class="embed-responsive embed-responsive-4by3">
+		<div class="embed-responsive embed-responsive-4by3 col-lg-6 mx-auto">
 			<iframe width="976" height="732" src="https://www.youtube.com/embed/ozz6Fwrw3qc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 	</p>
@@ -560,6 +632,8 @@ $(function() {
 	</script>
 
 	<p>
+		<h1 class="my-4">ツールヒント</h1>
+
 		ここに<a href="#" data-toggle="tooltip" data-placement="bottom" title="これがツールヒントです！">ツールヒント</a>が表示されます
 	</p>
 
@@ -568,7 +642,10 @@ $(function() {
 
 	<!-- ページング表示 -->
 	<nav>
-		<ul class="pagination">
+		<h1 class="my-4">ページング表示</h1>
+
+		<!-- Flexユーティリティを使ってセンタリング -->
+		<ul class="pagination justify-content-center">
 			<!-- 最初に戻るボタン-->
 			<li class="page-item">
 				<a href="#" class="page-link" aria-label="First">
@@ -597,9 +674,9 @@ $(function() {
 
 	<p><hr></p>
 
-	<p>
+	<p class="mx-auto">
 		<ul class="list-unstyled">
-			<li><a href="form.html">フォームの練習へ</a></li>
+			<li class="text-center"><a href="form.html" class="display-4">フォームの練習へ</a></li>
 		</ul>
 	</p>
 

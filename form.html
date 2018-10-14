@@ -10,6 +10,7 @@
 <div class="container">
 
 	<!-- 縦方向のフォーム -->
+	<h1 class="my-4">縦方向のフォーム</h1>
 	<form class="col-sm-6">
 		<fieldset class="form-group">
 			<label for="name">氏名</label>
@@ -24,17 +25,21 @@
 		</fieldset>
 		<button type="submit" class="btn btn-primary">送信</button>
 	</form>
+
 	<p><hr></p>
 
 	<!-- インラインのフォーム -->
+	<h1 class="my-4">インラインのフォーム</h1>
 	<form class="form-inline col-sm-6">
 		<label class="mb-0 mr-sm-2" for="name">氏名</label>
 		<input class="mb-2 mr-sm-2 mb-sm-0" type="text" class="form-control" id="name" name="name">
 		<button type="submit" class="btn btn-primary">送信</button>
 	</form>
+
 	<p><hr></p>
 
 	<!-- ラベルと入力欄が左右に並んだフォーム -->
+	<h1 class="my-4">ラベルと入力欄を左右に並べたフォーム</h1>
 	<form class="col-sm-6">
 		<div class="form-group row">
 			<label class="mb-0 mr-sm-2" for="name">氏名</label>
@@ -46,91 +51,103 @@
 			<button type="submit" class="btn btn-primary">送信</button>
 		</div>
 	</form>
+
 	<p><hr></p>
 
 	<!-- ボタンオプション -->
-	<form>
-		<!-- 色付きボタン -->
-		<div class="form-group row">
-			<button type="button" class="btn mr-2 btn-primary">OKボタン</button>
-			<button type="button" class="btn mr-2 btn-secondary">キャンセルボタン</button>
-			<button type="button" class="btn mr-2 btn-info">情報ボタン</button>
-			<button type="button" class="btn mr-2 btn-success">良い操作のボタン</button>
-			<button type="button" class="btn mr-2 btn-warning">危ないボタン</button>
-			<button type="button" class="btn mr-2 btn-danger">危険なボタン</button>
-			<button type="button" class="btn mr-2 btn-dark">ダークボタン</button>
-			<button type="button" class="btn mr-2 btn-link">リンクボタン</button>
-		</div>
+	<h1 class="my-4">いろいろなボタン</h1>
+	<p>
+		<form class="col-12">
+			<!-- 色付きボタン -->
+			<div class="form-group row">
+				<button type="button" class="btn mr-2 btn-primary">OKボタン</button>
+				<button type="button" class="btn mr-2 btn-secondary">キャンセルボタン</button>
+				<button type="button" class="btn mr-2 btn-info">情報ボタン</button>
+				<button type="button" class="btn mr-2 btn-success">良い操作のボタン</button>
+				<button type="button" class="btn mr-2 btn-warning">危ないボタン</button>
+				<button type="button" class="btn mr-2 btn-danger">危険なボタン</button>
+				<button type="button" class="btn mr-2 btn-dark">ダークボタン</button>
+				<button type="button" class="btn mr-2 btn-link">リンクボタン</button>
+			</div>
 
-		<!-- 色付きアウトラインボタン -->
-		<div class="form-group row">
-			<button type="button" class="btn mr-2 btn-outline-primary">OKボタン</button>
-			<button type="button" class="btn mr-2 btn-outline-secondary">キャンセルボタン</button>
-			<button type="button" class="btn mr-2 btn-outline-info">情報ボタン</button>
-			<button type="button" class="btn mr-2 btn-outline-success">良い操作のボタン</button>
-			<button type="button" class="btn mr-2 btn-outline-warning">危ないボタン</button>
-			<button type="button" class="btn mr-2 btn-outline-danger">危険なボタン</button>
-			<button type="button" class="btn mr-2 btn-outline-dark">ダークボタン</button>
-			<button type="button" class="btn mr-2 btn-outline-link">リンクボタン</button>
-		</div>
+			<!-- 色付きアウトラインボタン -->
+			<div class="form-group row">
+				<button type="button" class="btn mr-2 btn-outline-primary">OKボタン</button>
+				<button type="button" class="btn mr-2 btn-outline-secondary">キャンセルボタン</button>
+				<button type="button" class="btn mr-2 btn-outline-info">情報ボタン</button>
+				<button type="button" class="btn mr-2 btn-outline-success">良い操作のボタン</button>
+				<button type="button" class="btn mr-2 btn-outline-warning">危ないボタン</button>
+				<button type="button" class="btn mr-2 btn-outline-danger">危険なボタン</button>
+				<button type="button" class="btn mr-2 btn-outline-dark">ダークボタン</button>
+				<button type="button" class="btn mr-2 btn-outline-link">リンクボタン</button>
+			</div>
 
-		<!-- ブロック全域のボタン -->
-		<div class="form-group row">
-			<!-- 大きいボタン -->
-			<button type="button" class="btn btn-danger btn-block btn-lg">ブロックボタン</button>
-		</div>
+			<!-- ブロック全域のボタン -->
+			<div class="form-group row">
+				<!-- 大きいボタン -->
+				<button type="button" class="btn btn-danger btn-block btn-lg">ブロックボタン</button>
+			</div>
 
-		<!-- 無効なボタン -->
-		<div class="form-group row">
-			<button type="button" class="btn btn-danger" disabled>無効なボタン</button>
-		</div>
+			<!-- 無効なボタン -->
+			<div class="form-group row">
+				<button type="button" class="btn btn-danger" disabled>無効なボタン</button>
+			</div>
 
-		<!-- ドロップダウンボタン: 展開するには bootstrap.bundle.min.js が必要 -->
-		<div class="form-group row">
-			<div class="dropdown">
-				<button class="btn btn-primary dropdown-toggle"
-					type="button" id="dropdown-test" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false">ボタンが展開するよ</button>
-				<div class="dropdown-menu" aria-labelledby="dropdown-test">
-					<h6 class="dropdown-header">ヘッダー１</h6>
-					<!-- Buttonタグの代わりに a タグとかでもOK -->
-					<button type="button" class="dropdown-item">項目１</button>
-					<div class="dropdown-divider"><!-- 区切り線 --></div>
-					<button type="button" class="dropdown-item">項目２</button>
-					<div class="dropdown-divider"><!-- 区切り線 --></div>
-					<h6 class="dropdown-header">ヘッダー２</h6>
-					<button type="button" class="dropdown-item" disabled>項目３（選択不可）</button>
+			<!-- ドロップダウンボタン: 展開するには bootstrap.bundle.min.js が必要 -->
+			<div class="form-group row">
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle"
+						type="button" id="dropdown-test" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">ボタンが展開するよ</button>
+					<div class="dropdown-menu" aria-labelledby="dropdown-test">
+						<h6 class="dropdown-header">ヘッダー１</h6>
+						<!-- Buttonタグの代わりに a タグとかでもOK -->
+						<button type="button" class="dropdown-item">項目１</button>
+						<div class="dropdown-divider"><!-- 区切り線 --></div>
+						<button type="button" class="dropdown-item">項目２</button>
+						<div class="dropdown-divider"><!-- 区切り線 --></div>
+						<h6 class="dropdown-header">ヘッダー２</h6>
+						<button type="button" class="dropdown-item" disabled>項目３（選択不可）</button>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- スプリットボタン: 展開するには bootstrap.bundle.min.js が必要 -->
-		<div class="form-group row">
-			<div class="btn-group">
-				<!-- 普通のボタン -->
-				<button type="button" class="btn btn-primary">このボタンは押せるよ</button>
+			<!-- スプリットボタン: 展開するには bootstrap.bundle.min.js が必要 -->
+			<div class="form-group row">
+				<div class="btn-group">
+					<!-- 普通のボタン -->
+					<button type="button" class="btn btn-primary">このボタンは押せるよ</button>
 
-				<!-- 横にテキストが非表示になったドロップダウンボタンを置くだけ -->
-				<button class="btn btn-primary dropdown-toggle" type="button" id="dropdown-test" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false"><span class="sr-only">ボタンが展開するよ</span></button>
-				<div class="dropdown-menu" aria-labelledby="dropdown-test">
-					<h6 class="dropdown-header">ヘッダー１</h6>
-					<!-- Buttonタグの代わりに a タグとかでもOK -->
-					<button type="button" class="dropdown-item">項目１</button>
-					<div class="dropdown-divider">
-						<!-- 区切り線 -->
+					<!-- 横にテキストが非表示になったドロップダウンボタンを置くだけ -->
+					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdown-test" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"><span class="sr-only">ボタンが展開するよ</span></button>
+					<div class="dropdown-menu" aria-labelledby="dropdown-test">
+						<h6 class="dropdown-header">ヘッダー１</h6>
+						<!-- Buttonタグの代わりに a タグとかでもOK -->
+						<button type="button" class="dropdown-item">項目１</button>
+						<div class="dropdown-divider">
+							<!-- 区切り線 -->
+						</div>
+						<button type="button" class="dropdown-item">項目２</button>
+						<div class="dropdown-divider">
+							<!-- 区切り線 -->
+						</div>
+						<h6 class="dropdown-header">ヘッダー２</h6>
+						<button type="button" class="dropdown-item" disabled>項目３（選択不可）</button>
 					</div>
-					<button type="button" class="dropdown-item">項目２</button>
-					<div class="dropdown-divider">
-						<!-- 区切り線 -->
-					</div>
-					<h6 class="dropdown-header">ヘッダー２</h6>
-					<button type="button" class="dropdown-item" disabled>項目３（選択不可）</button>
 				</div>
 			</div>
-		</div>
+		</form>
+	</p>
 
-	</form>
+	<p><hr></p>
+
+	<p class="mx-auto">
+		<ul class="list-unstyled">
+			<li class="text-center"><a href="index.html" class="display-4">もどる</a></li>
+		</ul>
+	</p>
+
 </div>
 
 </body>
